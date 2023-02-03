@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+
+body{
+    font-family: 'Questrial', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Barra de Navegacion 1 */
+.barraDeNavegacion1{
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    background: #001950;
+    height: 40px;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+.barraDeNavegacion1 p{
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+     
+}
+.barraDeNavegacion1 .navbar1{
+    display: flex;
+    align-items: center;
+    border: 5px;
+}
+.barraDeNavegacion1 .navbar2{
+    display: flex;
+    align-items: center;
+}
+
+.inactive {
+    display: none;
+}
+
+/*lista de Empresas */
+.listaEmpresas{
+    position: absolute;
+    background: white;
+    border: 1px solid #c7c7c7;
+    list-style-type: none;
+    top: 28px;
+    left: 94px;
+    padding: 5px;
+}
+.listaEmpresas li{
+ font-size: 16px;
+}
+
+/* Barra de Navegacion 2*/
+
+.barraDeNavegacion2{
+    background: #00377d;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 74px;
+}
+
+.barraDeNavegacion2 a {
+    color: aliceblue;
+    padding: 0 15px;
+}
+
+.barraDeNavegacion2 div {
+    display: flex;
+    align-items: center;
+}
+.iconoNav {
+    width: 40px;
+}
+.iconoNav2 {
+    width: 28px;
+}
+
+/*Buscador */
+.buscador{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 211px;
+    padding: 35px;
+    border-right: 1px solid #bda8a8;
+    border-bottom: 1px solid #bda8a8;
+    position: absolute;
+}
+.buscador div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 0;
+    
+}
+.buscador a{
+    display: flex;
+}
+ul{
+    padding-inline-start: 0;
+}
+
+li{
+    list-style-type: none; 
+}
+p{
+    margin: 2px;
+}
+
+/*Planes */
+.planes{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    margin-left: 300px;
+    flex-direction: column;
+}
+.planes div{
+    display: flex;
+    align-items: stretch;
+}
+.opciones div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 60px;
+    border: 0.5px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    justify-content: space-between;
+    height: 80px;
+    width: 20%;
+}
+.opciones img{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    margin-left: -55px;
+    top: 30px;
+}

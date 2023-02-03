@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
     <nav class="barraDeNavegacion1">
@@ -44,39 +44,43 @@
     </div>
 
     <nav class="barraDeNavegacion2">
-        <img src="" alt="Logo">
-        <a href="">MOVIL</a>
-        <ul>
-            <li>Pospago</li>
-            <li>Prepago</li>
-            <li>Contenido Premium</li>
-            <li>Paga tu factura</li>
-        </ul>
-        <a href="">INTERNET</a>
-        <ul>
-            <li>Planes de Internet</li>
-            <li>Contenido Premium</li>
-            <li>Paga tu factura</li>
-        </ul>
-        <a href="">TELEVISION</a>
-        <ul>
-            <li>Planes de TV</li>
-            <li>Contenido Premium</li>
-            <li>Guia de Canales</li>
-            <li>Paga tu factura</li>
-        </ul>
-        <a href="/">Planes</a>
-        <a href="">TIENDA ONLINE</a>
-        <img src="" alt="carrito de compras">
-        <img src="" alt="lupa">
+        <div>
+            <img id="logo" src="./img/logo.PNG" alt="Logo">
+            <a href="">MOVIL</a>
+            <ul class="inactive">
+                <li>Pospago</li>
+                <li>Prepago</li>
+                <li>Contenido Premium</li>
+                <li>Paga tu factura</li>
+            </ul>
+            <a href="">INTERNET</a>
+            <ul class="inactive">
+                <li>Planes de Internet</li>
+                <li>Contenido Premium</li>
+                <li>Paga tu factura</li>
+            </ul>
+            <a href="">TELEVISION</a>
+            <ul class="inactive">
+                <li>Planes de TV</li>
+                <li>Contenido Premium</li>
+                <li>Guia de Canales</li>
+                <li>Paga tu factura</li>
+            </ul>
+            <a href="/">PLANES</a>
+        </div>
+        <div>
+            <a href="">TIENDA ONLINE</a>
+            <img class="iconoNav" src="./img/carrito.png" alt="carrito de compras">
+            <img class="iconoNav2" src="./img/lupa.png" alt="lupa">
+        </div>
     </nav>
 
-    <section>
-        <img src="" alt="Publicidad">
+    <section class="publicidad">
+        <img style="width: 100%;" src="./img/publicidad.PNG" alt="Publicidad">
     </section>
 
     <section class="buscador">
-        <p>Filtros</p>
+        <h4>Filtros</h4>
         <div>
             <a href="">Precio</a>
             <div>
@@ -85,7 +89,7 @@
         </div>
         <div>
             <a href="">Marca</a>
-            <ul>
+            <ul class="marcas">
                 <li>Apple</li>
                 <li>Huawei</li>
                 <li>Motorola</li>
@@ -104,69 +108,71 @@
             </div>
         </div>
         <div>
-            <a href="">Pantalla</a>
-            <div>
-                <input type="checkbox"> 4.7 Pulgadas
-                <input type="checkbox"> 5.0 Pulgadas
-                <input type="checkbox"> 6.2 Pulgadas
-                <input type="checkbox"> 6.0 Pulgadas
-                <input type="checkbox"> 5.4 Pulgadas
-                <input type="checkbox"> 6.5 Pulgadas
-                <input type="checkbox"> 6.1 Pulgadas
-                <input type="checkbox"> 6.4 Pulgadas
-                <input type="checkbox"> 6.8 Pulgadas
-                <input type="checkbox"> 6.7 Pulgadas
-                <input type="checkbox"> 2.4 Pulgadas
+            <a  href="">Pantalla</a>
+            <div class="Pantalla" >
+                <p><input type="checkbox"> 4.7 Pulgadas</p>
+                <p><input type="checkbox"> 6.2 Pulgadas</p>
+                <p><input type="checkbox"> 6.0 Pulgadas</p>
+                <p><input type="checkbox"> 6.5 Pulgadas</p>
+                <p><input type="checkbox"> 5.4 Pulgadas</p>
+                <p><input type="checkbox"> 6.1 Pulgadas</p>
+                <p><input type="checkbox"> 5.0 Pulgadas</p>
+                <p><input type="checkbox"> 6.4 Pulgadas</p>
+                <p><input type="checkbox"> 6.8 Pulgadas</p>
+                <p><input type="checkbox"> 6.7 Pulgadas</p>
+                <p><input type="checkbox"> 2.4 Pulgadas</p>
             </div>
         </div>
         <div>
             <a href="">Memoria RAM</a>
             <div>
-                <input type="checkbox"> 1 GB
-                <input type="checkbox"> 2 GB
-                <input type="checkbox"> 3 GB
-                <input type="checkbox"> 4 GB
-                <input type="checkbox"> 6 GB
-                <input type="checkbox"> 8 GB
-                <input type="checkbox"> 12 GB
+                <p><input type="checkbox"> 1 GB</p>
+                <p><input type="checkbox"> 2 GB</p>
+                <p><input type="checkbox"> 3 GB</p>
+                <p><input type="checkbox"> 4 GB</p>
+                <p><input type="checkbox"> 6 GB</p>
+                <p><input type="checkbox"> 8 GB</p>
+                <p><input type="checkbox"> 12 GB</p>
             </div>
         </div>
         <div>
             <a href="">Color</a>
-            <input type="checkbox"> Blanco
-            <input type="checkbox"> Negro
-            <input type="checkbox"> Gris
-            <input type="checkbox"> Purpura
-            <input type="checkbox"> Azul
-            <input type="checkbox"> Twilight
-            <input type="checkbox"> Rojo
-            <input type="checkbox"> Verde
-            <input type="checkbox"> Azul Oceano
-            <input type="checkbox"> Naranja
+            <p><input type="checkbox"> Blanco</p>
+            <p><input type="checkbox"> Negro</p>
+            <p><input type="checkbox"> Gris</p>
+            <p><input type="checkbox"> Purpura</p>
+            <p><input type="checkbox"> Azul</p>
+            <p><input type="checkbox"> Twilight</p>
+            <p><input type="checkbox"> Rojo</p>
+            <p><input type="checkbox"> Verde</p>
+            <p><input type="checkbox"> Azul Oceano</p>
+            <p><input type="checkbox"> Naranja</p>
         </div>
     </section>
 
-    <section>
+    <section class="planes">
         <a href="">Servicios</a>
-        <div>
-            <img src="" alt="imagen1">
-            <p>Pasate a Tigo en pospago</p>
-            <a href="">IR AHORA</a>
-        </div>
-        <div>
-            <img src="" alt="imagen2">
-            <p>Lleva tu plan pospago</p>
-            <a href="">IR AHORA</a>
-        </div>
-        <div>
-            <img src="" alt="imagen3">
-            <p>Conoces nuestro planes prepago</p>
-            <a href="">IR AHORA</a>
-        </div>
-        <div>
-            <img src="" alt="imagen4">
-            <p>Encuenra accesorios para ti</p>
-            <a href="">IR AHORA</a>
+        <div class="opciones">
+            <div>
+                <img src="./img/servicios1.PNG" alt="imagen1">
+                <p>Pasate a Tigo en pospago</p>
+                <p>IR AHORA</p>
+            </div>
+            <div>
+                <img src="./img/servicios2.PNG" alt="imagen2">
+                <p>Lleva tu plan pospago</p>
+                <p>IR AHORA</p>
+            </div>
+            <div>
+                <img src="./img/servicios3.PNG" alt="imagen3">
+                <p>Conoces nuestro planes prepago</p>
+                <p>IR AHORA</p>
+            </div>
+            <div>
+                <img src="./img/servicios4.PNG" alt="imagen4">
+                <p>Encuenra accesorios para ti</p>
+                <p>IR AHORA</p>
+            </div>
         </div>
     </section>
 
