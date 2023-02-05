@@ -2,19 +2,13 @@ const btnEmpresas = document.querySelector("#Empresas");
 btnEmpresas.addEventListener("click", listaEmpesa);
 const menuEmpresas = document.querySelector(".ListaEmpresas")
 
-
-
 const btnInfomacion = document.querySelector("#informacion");
 btnInfomacion.addEventListener("click", listaInformacion);
 const menuInfomacion = document.querySelector(".infImpUsuario");
 
-
-
 const btnMenuFiltros2 = document.querySelector(".menu2");
 btnMenuFiltros2.addEventListener("click", menuFiltro);
 const abrirFiltro = document.querySelector(".buscador");
-
-
 
 const btnMovil = document.querySelector("#movil");
 btnMovil.addEventListener("click", menuMovil);
@@ -27,6 +21,21 @@ const abrirInternet = document.querySelector(".menuinternet");
 const btnTelevision = document.querySelector("#television");
 btnTelevision.addEventListener("click", menuTelevision);
 const abrirTelevsion = document.querySelector(".menuTelevision");
+
+const btnMenuUnificado = document.querySelector("#menuUnifi");
+btnMenuUnificado.addEventListener("click", menuUnificado);
+const abrirUnificado = document.querySelector(".menuBarraDeNavUnificada");
+
+function menuUnificado(){
+    const abrirMenuUnificado = abrirUnificado.classList.contains("inactive");
+    if (abrirMenuUnificado){
+        abrirUnificado.classList.remove("inactive");
+    }
+    else if (!abrirMenuUnificado){
+        abrirUnificado.classList.add("inactive");
+    }
+    return abrirMenuUnificado;
+}
 
 
 function listaEmpesa(){
