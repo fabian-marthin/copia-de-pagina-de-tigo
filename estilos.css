@@ -228,6 +228,7 @@ p{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .color {
@@ -246,6 +247,7 @@ article{
     margin: 10px;
     font-size: 10px;  
     border-radius: 5px;
+    max-width: 270px;
 }
 
 
