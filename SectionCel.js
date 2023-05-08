@@ -2,56 +2,56 @@ const listaPhones = [];
 
 const celular1 = listaPhones.push({
     url: "./img/celular.PNG",
-    referencia: "Samunsung Galaxy A32 128 GB",
-    valor: "$1.119.900",
-    color:["🔴","🔵","⚫","🟢"]
+    referencia: "iPhone 14 PRO 128GB",
+    valor: "$6.099.901",
+    color:["🔴","🟡","🟢"]
 })
 const celular3 = listaPhones.push({
     url: "./img/celular2.PNG",
-    referencia: "Samunsung Galaxy A32 128 GB",
-    valor: "$1.119.900",
-    color:["🔴","🔵","⚫","🟢"]
+    referencia: "Motorola G32 4/128GB",
+    valor: "$799.900",
+    color:["🔴","🔵","⚫","⚪"]
 })
 const celular4 = listaPhones.push({
     url: "./img/celular3.PNG",
-    referencia: "Samunsung Galaxy A32 128 GB",
-    valor: "$1.119.900",
-    color:["🔴","🔵","⚫","🟢"]
+    referencia: "Samsung A04s 128GB",
+    valor: "$769.9000",
+    color:["⚪","⚫","🟢"]
 })
 const celular5 = listaPhones.push({
     url: "./img/celular4.PNG",
-    referencia: "Samunsung Galaxy A32 128 GB",
-    valor: "$1.119.900",
-    color:["🔴","🔵","⚫","🟢"]
+    referencia: "Xiaomi Redmi Note 12 4/128GB",
+    valor: "$932.900",
+    color:["🔴","🔵","⚫","⚪"]
 })
 const celular6 = listaPhones.push({
     url: "./img/celular5.PNG",
-    referencia: "Samunsung Galaxy A32 128 GB",
-    valor: "$1.119.900",
-    color:["🔴","🔵","⚫","🟢"]
+    referencia: "Xiaomi Redmi 10C 128 GB Gris INT",
+    valor: "$629.900",
+    color:["🔴","🟣","🟢"]
 })
 const celular7 = listaPhones.push({
     url: "./img/celular6.PNG",
-    referencia: "Samunsung Galaxy A32 128 GB",
-    valor: "$1.119.900",
-    color:["🔴","🔵","⚫","🟢"]
+    referencia: "Samsung Galaxy A03 32 GB DS",
+    valor: "$479.900",
+    color:["🔴","🔵","⚪","🟢"]
 })
 const celular8 = listaPhones.push({
     url: "./img/celular7.PNG",
-    referencia: "Samunsung Galaxy A32 128 GB",
-    valor: "$1.119.900",
-    color:["🔴","🔵","⚫","🟢"]
+    referencia: "Xiaomi 12 8/256 GB",
+    valor: "$3.399.900",
+    color:["⚪","🔵","⚫","🟢"]
 })
 const celular9 = listaPhones.push({
     url: "./img/celular8.PNG",
-    referencia: "Samunsung Galaxy A32 128 GB",
-    valor: "$1.119.900",
-    color:["🔴","🔵","⚫","🟢"]
+    referencia: "Xiaomi Redmi 10A 32 GB",
+    valor: "$499.900",
+    color:["🔴","🔵","⚫"]
 })
 const celular10 = listaPhones.push({
     url: "./img/celular9.PNG",
-    referencia: "Samunsung Galaxy A32 128 GB",
-    valor: "$1.119.900",
+    referencia: "Moto Edge 30 Fusion - MOTO EDGE 30 FUSION 12/256GB QUARTZBLACK",
+    valor: "$2.999.900",
     color:["🔴","🔵","⚫","🟢"]
 })
 
@@ -75,7 +75,6 @@ for (let i = 0; i < listaPhones.length; i++) {
     `${element.referencia} <br> 
     ${element.valor}`;
     
-
     sectionCel.appendChild(creatArticle);
     creatArticle.appendChild(creatImg);
     creatArticle.appendChild(creatDiv);
@@ -83,162 +82,5 @@ for (let i = 0; i < listaPhones.length; i++) {
     creatArticle.appendChild(creatH2);
 
 }
-
-
-
-
-
-//         <article>
-//             <img src="./img/celular2.PNG" alt="celular">
-//             <div class="color">
-//                 <li>🔴</li>
-//                 <li>🔵</li>
-//                 <li>⚫</li>
-//                 <li>🟢</li>
-//             </div>
-//             <h2>Samunsung Galaxy A32 128 GB</h2>
-//             <div>
-//                 <h3>$1.119.900</h3>
-//                 <h4>-$180.000 DTO</h4>
-//             </div>
-//             <p>IVA Incluido</p>
-//             <div>
-//                 <h2>Regular</h2>
-//                 <p>$1.299.900</p>
-//             </div>
-//         </article>
-//         <article>
-//             <img src="./img/celular3.PNG" alt="celular">
-//             <div class="color">
-//                 <li>🔴</li>
-//                 <li>🔵</li>
-//                 <li>⚫</li>
-//                 <li>🟢</li>
-//             </div>
-//             <h2>Samunsung Galaxy A32 128 GB</h2>
-//             <div>
-//                 <h3>$1.119.900</h3>
-//                 <h4>-$180.000 DTO</h4>
-//             </div>
-//             <p>IVA Incluido</p>
-//             <div>
-//                 <h2>Regular</h2>
-//                 <p>$1.299.900</p>
-//             </div>
-//         </article>
-//         <article>
-//             <img src="./img/celular4.PNG" alt="celular">
-//             <div class="color">
-//                 <li>🔴</li>
-//                 <li>🔵</li>
-//                 <li>⚫</li>
-//                 <li>🟢</li>
-//             </div>
-//             <h2>Samunsung Galaxy A32 128 GB</h2>
-//             <div>
-//                 <h3>$1.119.900</h3>
-//                 <h4>-$180.000 DTO</h4>
-//             </div>
-//             <p>IVA Incluido</p>
-//             <div>
-//                 <h2>Regular</h2>
-//                 <p>$1.299.900</p>
-//             </div>
-//         </article>
-//         <article>
-//             <img src="./img/celular5.PNG" alt="celular">
-//             <div class="color">
-//                 <li>🔴</li>
-//                 <li>🔵</li>
-//                 <li>⚫</li>
-//                 <li>🟢</li>
-//             </div>
-//             <h2>Samunsung Galaxy A32 128 GB</h2>
-//             <div>
-//                 <h3>$1.119.900</h3>
-//                 <h4>-$180.000 DTO</h4>
-//             </div>
-//             <p>IVA Incluido</p>
-//             <div>
-//                 <h2>Regular</h2>
-//                 <p>$1.299.900</p>
-//             </div>
-//         </article>
-//         <article>
-//             <img src="./img/celular6.PNG" alt="celular">
-//             <div class="color">
-//                 <li>🔴</li>
-//                 <li>🔵</li>
-//                 <li>⚫</li>
-//                 <li>🟢</li>
-//             </div>
-//             <h2>Samunsung Galaxy A32 128 GB</h2>
-//             <div>
-//                 <h3>$1.119.900</h3>
-//                 <h4>-$180.000 DTO</h4>
-//             </div>
-//             <p>IVA Incluido</p>
-//             <div>
-//                 <h2>Regular</h2>
-//                 <p>$1.299.900</p>
-//             </div>
-//         </article>
-//         <article>
-//             <img src="./img/celular7.PNG" alt="celular">
-//             <div class="color">
-//                 <li>🔴</li>
-//                 <li>🔵</li>
-//                 <li>⚫</li>
-//                 <li>🟢</li>
-//             </div>
-//             <h2>Samunsung Galaxy A32 128 GB</h2>
-//             <div>
-//                 <h3>$1.119.900</h3>
-//                 <h4>-$180.000 DTO</h4>
-//             </div>
-//             <p>IVA Incluido</p>
-//             <div>
-//                 <h2>Regular</h2>
-//                 <p>$1.299.900</p>
-//             </div>
-//         </article>
-//         <article>
-//             <img src="./img/celular8.PNG" alt="celular">
-//             <div class="color">
-//                 <li>🔴</li>
-//                 <li>🔵</li>
-//                 <li>⚫</li>
-//                 <li>🟢</li>
-//             </div>
-//             <h2>Samunsung Galaxy A32 128 GB</h2>
-//             <div>
-//                 <h3>$1.119.900</h3>
-//                 <h4>-$180.000 DTO</h4>
-//             </div>
-//             <p>IVA Incluido</p>
-//             <div>
-//                 <h2>Regular</h2>
-//                 <p>$1.299.900</p>
-//             </div>
-//         </article>
-//         <article>
-//             <img src="./img/celular9.PNG" alt="celular">
-//             <div class="color">
-//                 <li>🔴</li>
-//                 <li>🔵</li>
-//                 <li>⚫</li>
-//                 <li>🟢</li>
-//             </div>
-//             <h2>Samunsung Galaxy A32 128 GB</h2>
-//             <div>
-//                 <h3>$1.119.900</h3>
-//                 <h4>-$180.000 DTO</h4>
-//             </div>
-//             <p>IVA Incluido</p>
-//             <div>
-//                 <h2>Regular</h2>
-//                 <p>$1.299.900</p>
-//             </div>
-//         </article>
 
 
