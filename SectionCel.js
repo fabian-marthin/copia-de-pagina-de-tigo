@@ -67,11 +67,6 @@ const celular10 = listaPhones.push({
 
 const sectionCel = document.querySelector(".SectionCel");
 
-
-
-
-
-
 //FILTRO DE BUSQUEDA
 
 const cel = document.getElementsByClassName("cel");
@@ -80,13 +75,11 @@ const button = document.getElementById("button");
 
 
 for (let options of cel) {
+    sectionCel.innerHTML = " "
     options.addEventListener("click", function(){
         if(this.checked == true){
             let celu = listaPhones.filter(item => item.marca === this.value);
-            for(incluir of celu){
-                listaPhones.push(incluir);
-            }
-            console.log(listaPhones);
+            console.log(this.value, celu);
         }else{
             
         }
@@ -95,6 +88,7 @@ for (let options of cel) {
 
 
 if(!cel.checked){
+    
     for (let i = 0; i < listaPhones.length; i++) {
         const element = listaPhones[i];
 
@@ -103,22 +97,22 @@ if(!cel.checked){
         let creatDiv = document.createElement('div');
         let creatLi = document.createElement('li');
         let creatH2 = document.createElement('h2');
-        
+
         creatImg.setAttribute('src', element.url);
         creatLi.innerHTML = element.color;
         creatH2.innerHTML = 
         `${element.referencia} <br> 
         ${element.valor}`;
 
-        
         sectionCel.appendChild(creatArticle);
         creatArticle.appendChild(creatImg);
         creatArticle.appendChild(creatDiv);
         creatDiv.appendChild(creatLi);
         creatArticle.appendChild(creatH2);
-    }
-}else{
-
+            }
 }
+
+
+
 
 
