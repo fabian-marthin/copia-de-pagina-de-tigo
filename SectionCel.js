@@ -75,42 +75,83 @@ const button = document.getElementById("button");
 
 
 for (let options of cel) {
-    sectionCel.innerHTML = " "
+    
     options.addEventListener("click", function(){
         if(this.checked == true){
+            sectionCel.innerHTML = " "
             let celu = listaPhones.filter(item => item.marca === this.value);
-            console.log(this.value, celu);
-        }else{
-            
+            for (let j = 0; j < celu.length; j++) {
+                const element = listaPhones[j];
+                console.log(element);
+                let creatArticle = document.createElement('article');
+                let creatImg = document.createElement('img');
+                let creatDiv = document.createElement('div');
+                let creatLi = document.createElement('li');
+                let creatH2 = document.createElement('h2');
+        
+                creatImg.setAttribute('src', element.url);
+                creatLi.innerHTML = element.color;
+                creatH2.innerHTML = 
+                `${element.referencia} <br> 
+                ${element.valor}`;
+        
+                sectionCel.appendChild(creatArticle);
+                creatArticle.appendChild(creatImg);
+                creatArticle.appendChild(creatDiv);
+                creatDiv.appendChild(creatLi);
+                creatArticle.appendChild(creatH2);
+            }
+        }else if(this.checked == false){
+            sectionCel.innerHTML = " "
+            for (let i = 0; i < listaPhones.length; i++) {
+                const element = listaPhones[i];
+        
+                let creatArticle = document.createElement('article');
+                let creatImg = document.createElement('img');
+                let creatDiv = document.createElement('div');
+                let creatLi = document.createElement('li');
+                let creatH2 = document.createElement('h2');
+        
+                creatImg.setAttribute('src', element.url);
+                creatLi.innerHTML = element.color;
+                creatH2.innerHTML = 
+                `${element.referencia} <br> 
+                ${element.valor}`;
+        
+                sectionCel.appendChild(creatArticle);
+                creatArticle.appendChild(creatImg);
+                creatArticle.appendChild(creatDiv);
+                creatDiv.appendChild(creatLi);
+                creatArticle.appendChild(creatH2);
+            }
         }
     })
 }
 
 
-if(!cel.checked){
-    
-    for (let i = 0; i < listaPhones.length; i++) {
-        const element = listaPhones[i];
+// if(cel.checked){
+//     for (let i = 0; i < listaPhones.length; i++) {
+//         const element = listaPhones[i];
 
-        let creatArticle = document.createElement('article');
-        let creatImg = document.createElement('img');
-        let creatDiv = document.createElement('div');
-        let creatLi = document.createElement('li');
-        let creatH2 = document.createElement('h2');
+//         let creatArticle = document.createElement('article');
+//         let creatImg = document.createElement('img');
+//         let creatDiv = document.createElement('div');
+//         let creatLi = document.createElement('li');
+//         let creatH2 = document.createElement('h2');
 
-        creatImg.setAttribute('src', element.url);
-        creatLi.innerHTML = element.color;
-        creatH2.innerHTML = 
-        `${element.referencia} <br> 
-        ${element.valor}`;
+//         creatImg.setAttribute('src', element.url);
+//         creatLi.innerHTML = element.color;
+//         creatH2.innerHTML = 
+//         `${element.referencia} <br> 
+//         ${element.valor}`;
 
-        sectionCel.appendChild(creatArticle);
-        creatArticle.appendChild(creatImg);
-        creatArticle.appendChild(creatDiv);
-        creatDiv.appendChild(creatLi);
-        creatArticle.appendChild(creatH2);
-            }
-}
+//         sectionCel.appendChild(creatArticle);
+//         creatArticle.appendChild(creatImg);
+//         creatArticle.appendChild(creatDiv);
+//         creatDiv.appendChild(creatLi);
+//         creatArticle.appendChild(creatH2);
+//     }
+// }
 
 
 
